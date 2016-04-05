@@ -1,0 +1,24 @@
+template: Hello, %s!
+defaultName: Stranger1
+
+logging:
+  level: INFO
+  loggers:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost/pantry_car
+  user: root
+  password:
+  minSize: 8
+  maxSize: 32
+  properties:
+     hibernate.connection.driver_class: com.mysql.jdbc.Driver
+     hibernate.dialect : org.hibernate.dialect.MySQLDialect
+     hibernate.hbm2ddl.auto: update
+     hibernate.format_sql: true
+     maxWaitForConnection: 1s
+     validationQuery: "/* MyService Health Check */ SELECT 1"
+     checkConnectionWhileIdle: true

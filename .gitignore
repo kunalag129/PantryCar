@@ -1,0 +1,62 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+### Eclipse ###
+*.pydevproject
+.project
+.metadata
+bin/**
+log/**
+logs/**
+*/logs/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+test-output/*
+test-output/**
+test-output/**/*
+
+
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+.DS_Store
+.classpath
+.setting/*
+src/.DS_Store
+
+dependency-reduced-pom.xml
+
+### IntelliJ ###
+*.iml
+dependency-reduced-pom.xml
+pantrycar.yml
+*.ipr
+*.iws
+.idea/
+
+target/
+
+*.jar
+*.war
+*.ear
+
