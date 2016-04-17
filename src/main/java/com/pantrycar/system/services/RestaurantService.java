@@ -102,6 +102,7 @@ public class RestaurantService {
                 .deliveryCharges(restaurant.getDeliveryCharges())
                 .isOnline(restaurant.isOnline())
                 .url(restaurant.getUrl())
+                .location(restaurant.getLocation())
                 .stationDetails(stationDetails)
                 .build();
     }

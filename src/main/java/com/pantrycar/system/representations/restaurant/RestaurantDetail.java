@@ -2,6 +2,7 @@ package com.pantrycar.system.representations.restaurant;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.pantrycar.system.core.Location;
 import com.pantrycar.system.representations.BasicResponse;
 import com.pantrycar.system.representations.railway.StationDetails;
 import lombok.*;
@@ -32,6 +33,7 @@ public class RestaurantDetail extends BasicResponse {
     private double deliveryCharges;
     private boolean isOnline;
     private String url;
+    private Location location;
 
     @JsonIgnoreProperties({"responseStatus", "responseCode"})
     private StationDetails stationDetails;
